@@ -22,6 +22,11 @@ body{
     border-radius: 6px;
 
 }
+.container{
+    width:100%;
+    margin:0 auto;
+    padding:0 15px;    
+}
 .navbar {
     background-color: #fff;
     display :flex;
@@ -38,6 +43,15 @@ body{
 .navbar__nav__items{
     padding:15px 0px 0px 0px;
 }
+.hero__container{
+    width: 100%;
+}
+.hero__image__container{
+    width: 100%;
+}
+.hero__image{
+    width:100%;
+}
 @media (min-width: 768px) {
     .navbar{
         justify-content: space-between;
@@ -49,5 +63,22 @@ body{
     .button__primary{
         padding:20px;
         font-size: 20px;
+    }
+    .hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap:10px;
+    }
+
+}
+@media (min-width:1020px){
+    .container{
+        max-width: 1000px;
+    }
+    .hero__image{
+        width:500px;
+        height:300px;
     }
 }
